@@ -61,4 +61,5 @@ ignore: null
 theme: icarus
 deploy:
   type: 'git'
-  repo: 'https://github.com/J-I-P/j-i-p.github.io'
+  repo: 'https://github.com/J-I-P/j-i-p.github.io.git'
+  branch: 'gh-pages'
