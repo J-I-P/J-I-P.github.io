@@ -3,11 +3,11 @@ version: 5.1.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /img/logo.svg
+logo: /images/logo.jpeg
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /img/favicon.svg
+    favicon: /images/logo.jpeg
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -19,7 +19,7 @@ head:
         # The start URL of the web application
         start_url: 
         # The default theme color for the application
-        theme_color: 
+        theme_color: deepskyblue
         # A placeholder background color for the application page to display
         # before its stylesheet is loaded
         background_color: 
@@ -105,20 +105,29 @@ head:
 navbar:
     # Navigation menu items
     menu:
-        Home: /
-        Archives: /archives
-        Categories: /categories
-        Tags: /tags
-        About: /about
+        HOME: /
+        
+        ABOUT: /about
+        BLOG: /categories/blog
+        # ARTICLES: /articles
+        PROJECTS: /projects
+        # READINGS: /readings
+        # LIFE: /categories/life
+        # ESSAYS: /essay
+        # ARCHIVES: /archives
+        CATEGORIES: /categories
+        GAME: /categories/game
+        TAGS: /tags
+        # FAQ: /faq
     # Links to be shown on the right of the navigation bar
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/j-i-p
 # Page footer configurations
 footer:
     # Copyright text
-    copyright: © 2019
+    copyright: © 2024 JYPin
     # Links to be shown on the right of the footer section
     links:
         Creative Commons:
@@ -129,7 +138,7 @@ footer:
             url: https://creativecommons.org/licenses/by/4.0/
         Download on GitHub:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/j-i-p
 # Article related configurations
 article:
     # Code highlight settings
@@ -175,27 +184,27 @@ donates:
     -
         type: afdian
         # URL to the "Afdian.net" personal page
-        url: ''
+        url: 'https://www.buymeacoffee.com/jypin'
     # Alipay donate button configurations
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: ''
+        qrcode: 'https://www.buymeacoffee.com/jypin'
     # "Buy me a coffee" donate button configurations
     -
         type: buymeacoffee
         # URL to the "Buy me a coffee" page
-        url: ''
+        url: 'https://www.buymeacoffee.com/jypin'
     # Patreon donate button configurations
     -
         type: patreon
         # URL to the Patreon page
-        url: ''
+        url: 'https://www.buymeacoffee.com/jypin'
     # Paypal donate button configurations
     -
         type: paypal
         # Paypal business ID or email address
-        business: ''
+        business: 'https://www.buymeacoffee.com/jypin'
         # Currency code
         currency_code: USD
     # Wechat donate button configurations
@@ -229,24 +238,25 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Your name
+        author: JYPin
         # Author title
-        author_title: Your title
+        author_title:  Fake it, until make it!
+
         # Author's current location
-        location: Your location
+        location: Taipei, Taiwan
         # URL or path to the avatar image
-        avatar: 
+        avatar: /images/logo.jpeg
         # Whether show the rounded avatar image
-        avatar_rounded: false
+        avatar_rounded: true
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
-        follow_link: https://github.com/ppoffice
+        follow_link: https://github.com/j-i-p
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: https://github.com/ppoffice
+                url: https://github.com/j-i-p
             Facebook:
                 icon: fab fa-facebook
                 url: https://facebook.com
@@ -287,17 +297,17 @@ widgets:
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: recent_posts
     # Archives widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: archives
     # Tags widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: tags
         # How to order tags. For example 'name' to order by name in ascending order, and '-length' to order by number of posts in each tags in descending order
         order_by: name
